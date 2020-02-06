@@ -325,7 +325,7 @@
                                 "sudo yum -y install java-1.8.0-openjdk-devel\n",
                                 "sudo yum -y install unzip\n",
                                 "sudo yum install git -y\n",
-                                "git clone https://github.com/aws-samples/unishop-monolith-to-microservices.git /home/ec2-user/MonoToMicro\n",
+                                "git clone https://github.com/jbennett7/unishop-monolith-to-microservices.git /home/ec2-user/MonoToMicro\n",
                                 "sudo mysql -u MonoToMicroUser -h",{"Fn::GetAtt": ["DBInstance","Endpoint.Address"]}," -P 3306 -pMonoToMicroPassword < /home/ec2-user/MonoToMicro/MonoToMicroLegacy/database/create_tables.sql\n",
                                 "export MONO_TO_MICRO_DB_ENDPOINT=",{"Fn::GetAtt": ["DBInstance","Endpoint.Address"]},"\n",
                                 "cd /home/ec2-user/\n",
